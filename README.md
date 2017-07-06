@@ -1,9 +1,6 @@
 ## kubeadm installer for CoreOS, Ubuntu, Debian, CentOS and Fedora
 
-
-[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg?style=flat-square)](https://hub.docker.com/r/xakra/kubeadm-installer/)
-[![Docker Build Statu](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg?style=flat-square)](https://hub.docker.com/r/xakra/kubeadm-installer/)
-
+[![Docker Repository on Quay.io](https://quay.io/repository/kesslerm/kubeadm-installer/status "Docker Repository on Quay.io")]
 
 ### Note
 
@@ -25,7 +22,7 @@ $ docker run -it \
 	-v /etc:/rootfs/etc \
 	-v /opt:/rootfs/opt \
 	-v /usr/bin:/rootfs/usr/bin \
-	xakra/kubeadm-installer:0.4.5 ${your_os_here}
+	quay.io/kesslerm/kubeadm-installer:3.6.2_0.4.5.1 ${your_os_here}
 ```
 
 `${your_os_here}` can be `coreos`, `ubuntu`, `debian`, `fedora` or `centos`
@@ -38,7 +35,7 @@ $ docker run -it 	\
 	-v /etc:/rootfs/etc \
 	-v /opt:/rootfs/opt \
 	-v /usr/bin:/rootfs/usr/bin \
-	xakra/kubeadm-installer:0.4.5 ${your_os_here} uninstall
+	quay.io/kesslerm/kubeadm-installer:3.6.2_0.4.5.1 ${your_os_here} uninstall
 ```
 
 

@@ -145,7 +145,7 @@ cat <<-EOF
     -v /etc/:/rootfs/etc \
     -v /usr:/rootfs/usr \
     -v /opt:/rootfs/opt \
-    xakra/kubeadm-installer your_os_here
+    quay.io/kesslerm/kubeadm-installer your_os_here
 
   your_os_here can be coreos, ubuntu, debian, fedora or centos
 
@@ -154,7 +154,7 @@ cat <<-EOF
     -v /etc/:/rootfs/etc \
     -v /usr:/rootfs/usr \
     -v /opt:/rootfs/opt \
-    xakra/kubeadm-installer your_os_here uninstall
+    quay.io/kesslerm/kubeadm-installer your_os_here uninstall
 EOF
 exit 1
 fi
